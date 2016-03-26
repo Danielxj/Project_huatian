@@ -1,0 +1,32 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <!--android:id="@+id/rb_tab"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:text="首页"
+            android:drawableTop="@drawable/tab_home_selector"
+            android:textColor="@color/tab_text_color"
+            android:drawablePadding="3dp"
+            android:gravity="center"-->
+    <style name="first_tab">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:button">@null</item>
+        <item name="android:textColor">@color/tab_text_color</item>
+        <item name="android:gravity">center</item>
+        <item name="android:drawablePadding">3dp</item>
+    </style>
+
+</resources>

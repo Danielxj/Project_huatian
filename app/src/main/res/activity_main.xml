@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.mobiletrain.administrator.android_life.MainActivity">
+
+    <RadioGroup
+        android:id="@+id/rg_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_tab_home"
+            style="@style/first_tab"
+            android:drawableTop="@drawable/tab_home_selector"
+            android:text="首页" />
+
+        <RadioButton
+            android:id="@+id/rb_tab_discover"
+            style="@style/first_tab"
+            android:drawableTop="@drawable/tab_discover_selector"
+            android:text="发现" />
+
+        <RadioButton
+            android:id="@+id/rb_tab_personal"
+            style="@style/first_tab"
+            android:drawableTop="@drawable/tab_personal_selector"
+            android:text="我的" />
+
+    </RadioGroup>
+
+</RelativeLayout>
