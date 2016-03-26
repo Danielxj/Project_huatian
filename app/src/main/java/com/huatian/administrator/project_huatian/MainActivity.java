@@ -47,11 +47,11 @@ public class MainActivity extends BaseActivity {
                          * 反之同理
                          */
                         if (fragmentList.get(0).isAdded()) {
-                                manager.beginTransaction()
-                                        .hide(fragmentList.get(1))
-                                        .hide(fragmentList.get(2))
-                                        .show(fragmentList.get(0))
-                                        .commit();
+                            manager.beginTransaction()
+                                    .hide(fragmentList.get(1))
+                                    .hide(fragmentList.get(2))
+                                    .show(fragmentList.get(0))
+                                    .commit();
 
                         } else {
                             manager.beginTransaction().hide(fragmentList.get(1))
@@ -61,32 +61,34 @@ public class MainActivity extends BaseActivity {
                         break;
                     case R.id.rb_tab_discover:
                         if (fragmentList.get(1).isAdded()) {
-                                manager.beginTransaction()
-                                        .hide(fragmentList.get(0))
-                                        .hide(fragmentList.get(2))
-                                        .show(fragmentList.get(1))
-                                        .commit();
+                            manager.beginTransaction()
+                                    .hide(fragmentList.get(0))
+                                    .hide(fragmentList.get(2))
+                                    .show(fragmentList.get(1))
+                                    .commit();
 
                         } else {
                             manager.beginTransaction()
                                     .hide(fragmentList.get(0))
                                     .hide(fragmentList.get(2))
+                                    .show(fragmentList.get(1))
                                     .add(R.id.fl, fragmentList.get(1)).commit();
                         }
                         break;
                     case R.id.rb_tab_personal:
                         if (fragmentList.get(2).isAdded()) {
-                                manager.beginTransaction()
-                                        .hide(fragmentList.get(0))
-                                        .hide(fragmentList.get(1))
-                                        .show(fragmentList.get(2))
-                                        .commit();
+                            manager.beginTransaction()
+                                    .hide(fragmentList.get(0))
+                                    .hide(fragmentList.get(1))
+                                    .show(fragmentList.get(2))
+                                    .commit();
 
                         } else {
                             manager.beginTransaction()
                                     .hide(fragmentList.get(0))
                                     .hide(fragmentList.get(1)).
                                     add(R.id.fl, fragmentList.get(2))
+                                    .show(fragmentList.get(2))
                                     .commit();
                         }
                         break;
