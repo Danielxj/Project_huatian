@@ -2,6 +2,7 @@ package com.huatian.administrator.project_huatian.fragment;
 
 import android.os.Bundle;
 
+import com.huatian.administrator.project_huatian.R;
 import com.huatian.administrator.project_huatian.base.BaseFragment;
 
 /**
@@ -22,6 +23,6 @@ public class Personal_Fragment extends BaseFragment {
     
     @Override
     protected int getContentResid() {
-        return 0;
+        return R.layout.personal_fragment;
     }
 }
