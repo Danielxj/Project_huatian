@@ -1,13 +1,11 @@
 package com.huatian.administrator.project_huatian;
 
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
+import com.huatian.administrator.project_huatian.base.BaseActivity;
 
-public class MainActivity extends AppCompatActivity {
-//你好
+public class MainActivity extends BaseActivity {
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+    protected int getContentResid() {
+        return R.layout.activity_main;
     }
+
 }
