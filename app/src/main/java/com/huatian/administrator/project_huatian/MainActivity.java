@@ -5,7 +5,10 @@ import android.os.Bundle;
 
 public class MainActivity extends AppCompatActivity {
 
-    //lllll
+    /**
+     * 第一次上传
+     * @param savedInstanceState
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
