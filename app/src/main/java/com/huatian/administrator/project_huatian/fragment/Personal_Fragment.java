@@ -15,7 +15,6 @@ public class Personal_Fragment extends BaseFragment {
     public static Personal_Fragment newInstance() {
         
         Bundle args = new Bundle();
-        
         Personal_Fragment fragment = new Personal_Fragment();
         fragment.setArguments(args);
         return fragment;
