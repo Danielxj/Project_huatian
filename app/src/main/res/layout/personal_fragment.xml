@@ -16,7 +16,7 @@
         android:background="@drawable/home_fragment_top"/>
 
     <ListView
-        android:id="@+id/lv_home"
+        android:id="@+id/lv_personal"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
     </ListView>
