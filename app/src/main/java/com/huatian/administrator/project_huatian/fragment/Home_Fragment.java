@@ -54,12 +54,9 @@ public class Home_Fragment extends BaseFragment implements VolleyUtil.OnRequestL
 
     @Override
     protected void init(View view) {
-        View handview = getActivity().getLayoutInflater().inflate(R.layout.home_head_fragment, null);
-      //  mLv = (ListView) view.findViewById(R.id.lv_home);
-        headVp = (ViewPager) handview.findViewById(R.id.home_head_vp);
-        fl_home = (FrameLayout) view.findViewById(R.id.fl_home);
+      //  fl_home = (FrameLayout) view.findViewById(R.id.fl_home);
         homeHeadView = new HomeHeadView(getActivity(), getChildFragmentManager());
-        fl_home.addView(homeHeadView);
+       // fl_home.addView(homeHeadView);
         headDatas=new ArrayList<>();
     }
 

@@ -19,5 +19,6 @@ public interface Constant {
 
     interface KEYS{
         String HEAD_DATA="headviewdata";
+        String INTENT_PARTICULARS="intent";
     }
 }
