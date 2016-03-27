@@ -6,39 +6,34 @@
     xmlns:fresco="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
 
-        <android.support.v7.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
-            app:cardBackgroundColor="#fff"
-            app:cardCornerRadius="10dp"
-            app:cardElevation="5dp"
-            app:cardPreventCornerOverlap="true">
+    <RelativeLayout
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
 
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center">
+        <TextView
+            android:gravity="center_vertical"
+            android:id="@+id/tv_first_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="城市微光"
+            android:drawablePadding="5dp"
+            android:drawableLeft="@drawable/text_lift_home"
+            android:textColor="#777"
+            android:textSize="16sp" />
 
-                <TextView
-                    android:id="@+id/tv_second_title"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerInParent="true"
-                    android:text="城市微光"
-                    android:textColor="#777"
-                    android:textSize="20sp" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/community_item_more" />
 
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentRight="true"
-                    android:layout_centerVertical="true"
-                    android:layout_marginRight="20dp"
-                    android:src="@drawable/community_item_more" />
-
-            </RelativeLayout>
-
-        </android.support.v7.widget.CardView>
+    </RelativeLayout>
 
         <FrameLayout
             android:layout_width="match_parent"
@@ -218,7 +213,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 fresco:actualImageScaleType="centerCrop"
-                fresco:backgroundImage="@drawable/a"
+                fresco:backgroundImage="@drawable/c"
                 fresco:viewAspectRatio="2.40" />
 
             <ImageView
