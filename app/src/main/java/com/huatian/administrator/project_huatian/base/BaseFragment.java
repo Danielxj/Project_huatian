@@ -7,8 +7,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.android.volley.toolbox.Volley;
 import com.facebook.drawee.backends.pipeline.Fresco;
-import com.huatian.administrator.project_huatian.R;
 
 /**
  * @version V1.0

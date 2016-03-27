@@ -18,5 +18,6 @@ public interface Constant {
         }
 
     interface KEYS{
+        String HEAD_DATA="headviewdata";
     }
 }
