@@ -1,5 +1,6 @@
 package com.huatian.administrator.project_huatian.fragment;
 
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
@@ -8,6 +9,7 @@ import android.widget.Toast;
 
 import com.facebook.drawee.view.SimpleDraweeView;
 import com.huatian.administrator.project_huatian.Bean.HomeData;
+import com.huatian.administrator.project_huatian.ParticularsActiaity;
 import com.huatian.administrator.project_huatian.R;
 import com.huatian.administrator.project_huatian.base.BaseFragment;
 import com.huatian.administrator.project_huatian.util.Constant;
@@ -55,7 +57,9 @@ public class HomeHeadFragment extends BaseFragment {
         iv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getActivity(),"dataEntity.getSmallIcon()",Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(getActivity(), ParticularsActiaity.class);
+                intent.putExtra(Constant.KEYS.INTENT_PARTICULARS, dataEntity.getPageUrl());
+                startActivity(intent);
             }
         });
         tv.setText(dataEntity.getTitle());

@@ -9,7 +9,7 @@ import java.util.List;
  * @创建时间: 2016/3/27 13:58
  * @备注：
  */
-public class HomeData {
+public class HomeData implements Serializable{
 
     /**
      * msg : 已获取文章列表
@@ -398,7 +398,7 @@ public class HomeData {
             return videoUrl;
         }
 
-        public static class AuthorEntity {
+        public static class AuthorEntity implements Serializable{
             private String adminId;
             private String createDate;
             private String email;
@@ -473,7 +473,7 @@ public class HomeData {
             }
         }
 
-        public static class CategoryEntity {
+        public static class CategoryEntity implements Serializable {
             private String createDate;
             private String id;
             private String name;

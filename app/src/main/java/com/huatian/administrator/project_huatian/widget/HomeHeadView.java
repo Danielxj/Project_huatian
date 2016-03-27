@@ -5,11 +5,8 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.view.ViewPager;
-import android.util.Log;
 import android.view.LayoutInflater;
-import android.view.View;
 import android.widget.FrameLayout;
-import android.widget.Toast;
 
 import com.huatian.administrator.project_huatian.Bean.HomeData;
 import com.huatian.administrator.project_huatian.R;
@@ -52,12 +49,8 @@ public class HomeHeadView extends FrameLayout {
         this.datas = data;
         viewPagerAdapter = new ViewPagerAdapter(fragmentManager,datas);
         viewPager.setAdapter(viewPagerAdapter);
-        viewPager.setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(context,"我被点击了",Toast.LENGTH_SHORT).show();
-            }
-        });
+
+
 
         /**
          * 设置导航控件的个数
@@ -81,10 +74,10 @@ public class HomeHeadView extends FrameLayout {
             this.datas = datas;
         }
 
+
         @Override
         public Fragment getItem(int position) {
             HomeHeadFragment fragment = HomeHeadFragment.newInstance(datas.get(position));
-            Log.e("tag", "--------------------------------------");
             return fragment;
         }
 
