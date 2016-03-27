@@ -14,8 +14,6 @@ import com.huatian.administrator.project_huatian.base.BaseFragment;
  * @备注：
  */
 public class Home_Fragment extends BaseFragment {
-    private ListView mLv;
-    private ViewPager headVp;
 
     public static Home_Fragment newInstance() {
         
@@ -33,9 +31,6 @@ public class Home_Fragment extends BaseFragment {
 
     @Override
     protected void init(View view) {
-        View handview = getActivity().getLayoutInflater().inflate(R.layout.home_head_fragment, null);
-        mLv = (ListView)view.findViewById(R.id.lv_home);
-        headVp= (ViewPager) handview.findViewById(R.id.home_head_vp);
 
     }
 }
